@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height:100vh;
+  position: relative;
+}
+form {
+  position: absolute;
+  background-color:white;
+  max-width: 500px;
+  width: 70%;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  opacity: 90%;
+}
+form h3 {
+  text-align: center;
+  color:grey;
+  margin: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form input[type=email],
+form input[type=password]{
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+form input[type=submit]{
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(210, 90, 90);
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+form input[type=submit]:hover{
+  background-color: rgb(169, 51, 51);
+}
+
+form  a {
+  color:grey;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px ;
+}
+
+#login-fundo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/imagem-login.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: blur(1px);
+  -webkit-filter: blur(2px); 
+
+}
+
+#criarConta_fundo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(.//assets/images/criarrconta.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: blur(1px);
+  -webkit-filter: blur(2px); 
+
+}
+
+#home_fundo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/images/criarrconta.jpg) ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: blur(1px);
+  -webkit-filter: blur(2px); 
+
+}
+
+table {
+  position: absolute;
+  width: 95vw;
+  height:0vh;
+  background-color: white;
+  opacity: 80%;
+  padding: 20px;
+  font-family: Montserrat, Arial, sans-serif;
+  background:#fafafa ;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+  
+}
+
+th {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background:lightgray;
+}
+
+#inputs_adicionarTexto{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+h1 {
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 10px; 
+}
+  
+.input-descricao,.input-detalhe{
+  width: 30%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  border-radius: 4px;
+}
+
+.input-detalhe{
+  width: 50%;
+}
+
+.buttonSalvar {
+  width: 15%;
+  height: 40px;
+  border: 1px solid rgb(128, 126, 126);
+   cursor: pointer;
+  background-color: rgb(210, 90, 90);
+  border-radius: 4px;
+  color: white;
+}
+
+#estilo_elementosHome{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 95vw;
+  transform: translate(-50%, -50%);
+}
+
+.button-editar, .button-apagar {
+  width: 70px;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: rgb(224, 87, 87);
+  border-radius: 4px;
+  color: white;
+}
+
+.button-editar{
+  background-color: rgb(99, 167, 99);
+}
