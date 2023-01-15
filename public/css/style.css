@@ -7,6 +7,9 @@ body {
   height:100vh;
   position: relative;
 }
+
+
+
 .formulario-login-cadastro{
   position: absolute;
   background-color:white;
@@ -146,13 +149,26 @@ h1 {
   border-radius: 4px;
 }
 
+.editar-descricao,.editar-detalhe{
+  width: 90%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  border-radius: 4px;
+}
+
+.editar-detalhe{
+  width: 100%;
+  margin-left: 5px;
+}
+
 .input-detalhe{
   width: 50%;
 }
 
 .buttonSalvar {
   width: 15%;
-  height: 40px;
+  height: 41px;
   border: 1px solid  rgb(210, 90, 90);
    cursor: pointer;
   background-color: rgb(210, 90, 90);
@@ -189,8 +205,9 @@ h1 {
   opacity: 100%;
 }
 
-.button-apagar:hover{
+ .button-apagar:hover{
   background-color: rgb(231, 43, 43);
+  color: white;
   opacity: 100%;
 }
 
@@ -198,4 +215,23 @@ h1 {
   background-color: rgb(99, 167, 99);
   border: 1px solid  rgb(99, 167, 99);
   transition: 1s;
+}
+
+
+.btn-sair{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5%;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  background-color: white;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.img-sair{
+  height: 20px;
+  margin: 5px;
 }
