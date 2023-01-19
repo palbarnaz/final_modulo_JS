@@ -1,7 +1,5 @@
 const formularioRecados = document.getElementById('formulario-recados')
 const tbody = document.getElementById('recados')
-
-
 document.addEventListener('DOMContentLoaded', ()=> {
   
   if (!usuario) {
@@ -11,14 +9,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
   }
   
 })
-
 // buscar lista no sistema 
-
 let listaUsuarios = JSON.parse(localStorage.getItem('usuarios'));
-
 // buscar usuario logado no sistema
 const usuario = localStorage.getItem('usuarioLogado');
-
 // Informações do usuário logado
 let infoUsuario = listaUsuarios.find((valor) => valor.login === usuario);
 
@@ -58,7 +52,6 @@ formularioRecados.addEventListener('submit', (e)=> {
   atualizarTabela()
 
 })
-
 function atualizarTabela(){
   tbody.innerHTML = ''
 
@@ -73,11 +66,9 @@ function atualizarTabela(){
   `
   })
 }
-
 function apagarRegistro(indice) {
-  // remover da lista de registros
+ 
   let listaAtualizada = infoUsuario.listaRecados.filter((valor, index)=> index != indice)
-
 
   let usuarios = listaUsuarios.map((usuario) => {
     if (usuario.login === infoUsuario.login) {
@@ -89,10 +80,7 @@ function apagarRegistro(indice) {
   })
   
  localStorage.setItem('usuarios', JSON.stringify(usuarios) ) 
-  
-  // atualizar o localstorage
 
-  // remover do html
   let trRemover = document.getElementById(indice)
   trRemover.remove()
   atualizarTabela()
@@ -102,12 +90,10 @@ function sairDoSistema(){
   localStorage.removeItem('usuarioLogado')
   window.location.href = "index.html";
 }
-
 function buscarRecado(indice){
   let recado = infoUsuario.listaRecados.find((valor, index)=> index === indice)
   return recado
 }
-
 function editarRegistro(indice){
   const linhaEditar = document.getElementById(indice)
   const recado = buscarRecado(indice)
@@ -144,7 +130,6 @@ function editarRecado(indice){
     return usuario
   })
   
-
  localStorage.setItem('usuarios', JSON.stringify(usuarios) ) 
  
 }

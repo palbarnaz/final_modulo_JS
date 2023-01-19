@@ -1,14 +1,11 @@
 // CRIAR CONTA
 const create = document.getElementById('create-form');
-
 const usuario = localStorage.getItem('usuarioLogado');
-document.addEventListener('DOMContentLoaded', ()=> {
-  
+document.addEventListener('DOMContentLoaded', ()=> { 
   if (usuario) {
     window.location.href = 'home.html'
   }
 })
-
   create.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = document.getElementById('email-input').value;
@@ -29,9 +26,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     create.reset();
   });
-
-
-
 function validarLogin(email, senha1, senha2) {
   if (email.length < 5) {
     alert('Preencha o campo com um e-mail válido!');
@@ -57,8 +51,6 @@ function validarLogin(email, senha1, senha2) {
   }
   return true;
 }
-
-
 function salvarUsuario(objeto) {
   let listaUsuarios = localStorage.getItem('usuarios');
   if (!listaUsuarios) {

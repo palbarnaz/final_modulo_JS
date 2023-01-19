@@ -7,9 +7,6 @@ body {
   height:100vh;
   position: relative;
 }
-
-
-
 .formulario-login-cadastro{
   position: absolute;
   background-color:white;
@@ -101,7 +98,6 @@ form span {
   background-size: 100% 100%;
   filter: blur(1px);
   -webkit-filter: blur(2px); 
-
 }
 
 table {
@@ -216,7 +212,6 @@ h1 {
   border: 1px solid  rgb(99, 167, 99);
   transition: 1s;
 }
-
 
 .btn-sair{
   position: absolute;
