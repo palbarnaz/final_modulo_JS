@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     window.location.href = 'home.html'
   }
 })
+
   create.addEventListener('submit', (e) => {
     e.preventDefault();
     const email = document.getElementById('email-input').value;

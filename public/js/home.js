@@ -86,6 +86,7 @@ function apagarRegistro(indice) {
   atualizarTabela()
   
 }
+
 function sairDoSistema(){
   localStorage.removeItem('usuarioLogado')
   window.location.href = "index.html";
